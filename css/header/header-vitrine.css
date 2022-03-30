@@ -1,0 +1,6 @@
+.header__vitrine {
+  background: url("../../assets/header/banner-image.png") center / cover
+    no-repeat;
+  width: 100vw;
+  height: 40vh;
+}

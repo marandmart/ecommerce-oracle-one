@@ -1,0 +1,69 @@
+.header__topo {
+  align-content: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "logo busca login";
+  justify-content: space-between;
+  margin: auto;
+  padding: 2rem 0;
+  width: var(--largura-desktop);
+  box-sizing: border-box;
+}
+.header__topo__logo {
+  grid-area: logo;
+  width: 100%;
+  display: block;
+  align-self: center;
+  max-width: 150px;
+}
+
+.header__topo__busca {
+  background-color: var(--background-busca);
+  font-size: 14px;
+  padding: 12px 20px;
+  width: 50%;
+  border: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  grid-area: busca;
+}
+.header__topo__busca__input {
+  background-color: var(--background-busca);
+  border: none;
+  color: #a2a2a2;
+  width: 90%;
+}
+.header__topo__busca__input:focus {
+  outline: none;
+}
+.header__topo__busca__botao {
+  border: none;
+  background-color: var(--background-busca);
+  width: 10%;
+}
+
+.header__topo__login-btn {
+  padding: 1rem 3.5rem;
+  border: 1px solid var(--login-btn);
+  text-align: center;
+  text-decoration: none;
+  color: var(--login-btn);
+  grid-area: login;
+}
+
+@media screen and (max-width: 400px) {
+  .header__topo {
+    grid-template-areas: "logo login busca";
+  }
+  .header__topo__busca {
+    background-color: white;
+  }
+  .header__topo__busca__input {
+    display: none;
+  }
+  .header__topo__busca__botao {
+    background-color: white;
+  }
+}
