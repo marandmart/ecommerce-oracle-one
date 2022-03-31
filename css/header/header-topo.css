@@ -2,7 +2,7 @@
   align-content: center;
   display: grid;
   gap: 32px;
-  grid-template-columns: auto 3fr auto;
+  grid-template-columns: auto 3fr auto; /* essa parte pode estar causando problema com a variacao do tamanho do botão */
   grid-template-areas: "logo busca login";
   justify-content: space-between;
   margin: auto;
