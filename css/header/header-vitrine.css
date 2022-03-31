@@ -4,3 +4,9 @@
   width: 100vw;
   height: 40vh;
 }
+
+@media screen and (max-width: 400px) {
+  .header__vitrine {
+    height: 30vh;
+  }
+}

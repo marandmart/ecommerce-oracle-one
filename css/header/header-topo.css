@@ -1,8 +1,8 @@
 .header__topo {
   align-content: center;
   display: grid;
-  gap: 10px;
-  grid-template-columns: 1fr 3fr 1fr;
+  gap: 32px;
+  grid-template-columns: auto 3fr auto;
   grid-template-areas: "logo busca login";
   justify-content: space-between;
   margin: auto;
@@ -12,7 +12,8 @@
 }
 .header__topo__logo {
   grid-area: logo;
-  width: 100%;
+  width: 176px;
+  height: 50px;
   display: block;
   align-self: center;
   max-width: 150px;
@@ -20,31 +21,33 @@
 
 .header__topo__busca {
   background-color: var(--background-busca);
-  font-size: 14px;
   padding: 12px 20px;
-  width: 50%;
-  border: none;
+  width: 60%;
   border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
   grid-area: busca;
 }
-.header__topo__busca__input {
+
+.header__topo__busca__form {
+  display: flex;
+}
+.header__topo__busca__form__input {
   background-color: var(--background-busca);
   border: none;
   color: #a2a2a2;
   width: 90%;
 }
-.header__topo__busca__input:focus {
+.header__topo__busca__form__input:focus {
   outline: none;
 }
-.header__topo__busca__botao {
+
+.header__topo__busca__form__botao {
   border: none;
   background-color: var(--background-busca);
   width: 10%;
 }
 
 .header__topo__login-btn {
+  display: inline-block;
   padding: 1rem 3.5rem;
   border: 1px solid var(--login-btn);
   text-align: center;
@@ -53,17 +56,48 @@
   grid-area: login;
 }
 
+@media screen and (max-width: 850px) {
+  .header__topo {
+    width: var(--largura-mobile);
+    gap: 20px;
+    padding: 1rem 0;
+  }
+  .header__topo__logo {
+    width: 100px;
+    height: 28px;
+  }
+  .header__topo__busca {
+    width: 70%;
+  }
+  .header__topo__login-btn {
+    padding: 1rem 3rem;
+    font-size: 16px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .header__topo {
     grid-template-areas: "logo login busca";
   }
   .header__topo__busca {
     background-color: white;
+    padding: 0;
   }
-  .header__topo__busca__input {
+  .header__topo__busca__form {
+    justify-content: flex-end;
+    width: 15%;
+  }
+  .header__topo__login-btn {
+    padding: 1rem 3rem;
+    font-size: 16px;
+    width: 38px;
+    justify-self: center;
+  }
+  .header__topo__busca__form__input {
     display: none;
   }
-  .header__topo__busca__botao {
+  .header__topo__busca__form__botao {
     background-color: white;
+    padding: 1rem 0;
   }
 }
