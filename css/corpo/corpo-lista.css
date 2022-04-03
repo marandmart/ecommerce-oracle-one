@@ -57,6 +57,9 @@
 }
 
 @media screen and (max-width: 850px) {
+  .corpo__lista {
+    width: var(--largura-mobile);
+  }
   .corpo__lista__conteudo {
     gap: calc(10% / 3);
   }

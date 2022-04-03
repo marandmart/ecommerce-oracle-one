@@ -1,0 +1,109 @@
+.corpo__contato {
+  background-color: #eaf2fd;
+}
+.corpo__contato__container {
+  display: grid;
+  width: var(--largura-desktop);
+  margin: auto;
+  grid-template-areas: "logo nav contato";
+  padding: 4rem 0;
+}
+.corpo__contato__container__logo {
+  grid-area: logo;
+}
+.corpo__contato__container__nav {
+  grid-area: nav;
+}
+.corpo__contato__container__nav ul li {
+  margin-bottom: 24px;
+}
+.corpo__contato__container__nav ul li:last-child {
+  margin-bottom: 0;
+}
+.corpo__contato__container__nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+.corpo__contato__container__form {
+  grid-area: contato;
+  display: flex;
+  flex-direction: column;
+}
+.corpo__contato__container__form__titulo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+.corpo__contato__container__form label:first-child {
+  background-color: #fff;
+  padding: 1rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 12px;
+  font-weight: 400;
+  color: #a2a2a2;
+}
+.corpo__contato__container__form label input {
+  margin-top: 0.25rem;
+  border: none;
+}
+.corpo__contato__container__form label input:focus {
+  outline: none;
+}
+.corpo__contato__container__form__textarea {
+  width: 100%;
+  resize: none;
+  padding: 1rem 0.75rem;
+  margin-bottom: 0.5rem;
+  border: none;
+}
+.corpo__contato__container__form__textarea:focus {
+  outline: none;
+}
+.corpo__contato__container__form__button {
+  color: #fff;
+  padding: 16px;
+  background-color: #2a7ae4;
+  width: fit-content;
+  border: none;
+}
+
+@media screen and (max-width: 850px) {
+  .corpo__contato__container {
+    width: var(--largura-mobile);
+    grid-template-areas:
+      "logo contato"
+      "nav contato"
+      "nav contato";
+  }
+  .corpo__contato__container__logo {
+    margin-bottom: 1rem;
+  }
+  .corpo__contato__container__logo img {
+    width: 176px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .corpo__contato__container {
+    padding: 1rem 0;
+    grid-template-areas:
+      "logo logo"
+      "nav nav"
+      "contato contato";
+  }
+  .corpo__contato__container__logo {
+    margin: auto;
+  }
+  .corpo__contato__container__nav {
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+}
