@@ -3,4 +3,18 @@
   --largura-mobile: 90%;
   --background-busca: #f5f5f5;
   --login-btn: #2a7ae4;
+  --background-default: #e5e5e5;
+}
+
+.blue__button {
+  color: #fff;
+  padding: 16px;
+  background-color: #2a7ae4;
+  width: fit-content;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }

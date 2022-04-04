@@ -1,0 +1,24 @@
+.header__topo__admin-btn {
+  width: 150px;
+  padding: 1rem;
+  display: block;
+}
+
+@media screen and (max-width: 850px) {
+  .header__topo--ajustes {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .header__topo__admin-btn {
+    width: 134px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header__topo--ajustes {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .header__topo__busca--ajustes {
+    justify-self: center;
+  }
+}

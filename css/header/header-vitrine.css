@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 425px) {
   .header__vitrine {
-    height: 30vh;
+    height: 25vh;
   }
   .header__vitrine__container__titulo {
     font-size: 24px;
@@ -56,5 +56,6 @@
     padding: 12px;
     font-weight: 600;
     font-size: 14px;
+    margin-bottom: 1rem;
   }
 }
