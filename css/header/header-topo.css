@@ -75,7 +75,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 615px) {
   .header__topo {
     grid-template-areas: "logo login busca";
   }

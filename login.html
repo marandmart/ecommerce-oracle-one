@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/corpo/corpo-login-form.css" />
     <link rel="stylesheet" href="css/corpo/corpo-contato.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <script src="js/index.js"></script>
     <title>Home - Login</title>
   </head>
   <body>
@@ -47,7 +48,12 @@
     <main class="corpo">
       <section class="corpo__login">
         <h1 class="corpo__login__titulo">Iniciar Sessão</h1>
-        <form action="" method="post" class="corpo__login__form">
+        <form
+          action=""
+          method="post"
+          id="login-form"
+          class="corpo__login__form"
+        >
           <label for="email" class="corpo__login__form__label"
             ><input
               type="email"
@@ -55,6 +61,7 @@
               id="email"
               placeholder="Escreva o seu email"
               class="corpo__login__form__label__input"
+              required
           /></label>
           <label for="password" class="corpo__login__form__label"
             ><input
@@ -94,7 +101,13 @@
               class="corpo__contato__container__form"
             >
               <label for="nome"
-                >Nome: <input type="text" name="nome" id="nome"
+                >Nome:
+                <input
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  maxlength="40"
+                  required
               /></label>
               <label for="mensagem">
                 <textarea
@@ -102,6 +115,8 @@
                   id="mensagem"
                   class="corpo__contato__container__form__textarea"
                   placeholder="Escreva sua mensagem"
+                  maxlength="120"
+                  required
                 ></textarea>
               </label>
               <button

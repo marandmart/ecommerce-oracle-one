@@ -49,7 +49,9 @@
           <p class="header__vitrine__container__texto">
             Produtos selecionados com 33% de desconto
           </p>
-          <a href="#" class="header__vitrine__container__link">Ver Consoles</a>
+          <a href="#consoles" class="header__vitrine__container__link"
+            >Ver Consoles</a
+          >
         </div>
       </div>
     </header>
@@ -57,7 +59,7 @@
       <section class="corpo__lista">
         <div class="corpo__lista__topo">
           <h2 class="corpo__lista__topo__titulo">Star Wars</h2>
-          <a href="#" class="corpo__lista__topo__link"
+          <a href="todos-produtos.html" class="corpo__lista__topo__link"
             >Ver tudo <object data="assets/icones/seta.svg"></object
           ></a>
         </div>
@@ -136,10 +138,10 @@
           </div>
         </div>
       </section>
-      <section class="corpo__lista">
+      <section class="corpo__lista" id="consoles">
         <div class="corpo__lista__topo">
           <h2 class="corpo__lista__topo__titulo">Consoles</h2>
-          <a href="#" class="corpo__lista__topo__link"
+          <a href="todos-produtos.html" class="corpo__lista__topo__link"
             >Ver tudo <object data="assets/icones/seta.svg"></object
           ></a>
         </div>
@@ -223,7 +225,7 @@
       <section class="corpo__lista">
         <div class="corpo__lista__topo">
           <h2 class="corpo__lista__topo__titulo">Diversos</h2>
-          <a href="#" class="corpo__lista__topo__link"
+          <a href="todos-produtos.html" class="corpo__lista__topo__link"
             >Ver tudo <object data="assets/icones/seta.svg"></object
           ></a>
         </div>
@@ -337,7 +339,13 @@
               class="corpo__contato__container__form"
             >
               <label for="nome"
-                >Nome: <input type="text" name="nome" id="nome"
+                >Nome:
+                <input
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  maxlength="40"
+                  required
               /></label>
               <label for="mensagem">
                 <textarea
@@ -345,6 +353,8 @@
                   id="mensagem"
                   class="corpo__contato__container__form__textarea"
                   placeholder="Escreva sua mensagem"
+                  maxlength="120"
+                  required
                 ></textarea>
               </label>
               <button
