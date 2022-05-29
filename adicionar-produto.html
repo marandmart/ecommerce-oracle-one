@@ -58,42 +58,63 @@
             method="post"
             class="corpo__adicionar-produto__container__form"
           >
-            <fieldset
-              class="corpo__adicionar-produto__container__upload-imagem"
-            >
-              <div
-                class="corpo__adicionar-produto__container__upload-imagem__upload-area"
-              >
-                <object data="assets/icones/no-picture.svg"></object>
-                <p>Arraste para adicionar uma imagem para o produto</p>
-              </div>
-              <span
-                class="corpo__adicionar-produto__container__upload-imagem__span"
-                >ou</span
-              >
-              <label
-                for="file"
-                class="corpo__adicionar-produto__container__upload-imagem__upload-button"
-                ><input type="file" id="file" name="filename"
-              /></label>
-            </fieldset>
-            <label for="nome-produto"
+            <label
+              for="url-imagem"
+              class="corpo__adicionar-produto__container__form__label"
+              >URL da imagem<input
+                type="text"
+                name="url-imagem"
+                id="url-imagem"
+                class="corpo__adicionar-produto__container__form__label__input"
+                required
+            /></label>
+            <label
+              for="categoria"
+              class="corpo__adicionar-produto__container__form__label"
+              >Categoria<input
+                type="text"
+                name="categoria"
+                id="categoria"
+                class="corpo__adicionar-produto__container__form__label__input"
+                required
+            /></label>
+            <label
+              for="nome-produto"
+              class="corpo__adicionar-produto__container__form__label"
               >Nome do produto<input
                 type="text"
                 name="nome-produto"
                 id="nome-produto"
+                maxlength="20"
+                required
+                class="corpo__adicionar-produto__container__form__label__input"
             /></label>
-            <label for="preco-produto"
+            <label
+              for="preco-produto"
+              class="corpo__adicionar-produto__container__form__label"
               >Preço do produto<input
                 type="number"
                 min="0.00"
                 max="100000.00"
                 step="0.01"
+                required
+                class="corpo__adicionar-produto__container__form__label__input"
             /></label>
+            <label
+              for="descricao-produto"
+              class="corpo__adicionar-produto__container__form__label"
+              >Nome do produto<textarea
+                name="descricao-produto"
+                id="descricao-produto"
+                class="corpo__adicionar-produto__container__form__label__textarea"
+                maxlength="150"
+                required
+              ></textarea>
+            </label>
             <input
               type="submit"
               value="Adicionar produto"
-              class="blue__button"
+              class="blue__button corpo__adicionar-produto__container__form__button"
             />
           </form>
         </div>
