@@ -2,6 +2,9 @@
   margin: 4rem auto;
   width: var(--largura-desktop);
 }
+.corpo__lista:first-child {
+  margin-top: 2rem;
+}
 .corpo__lista__topo {
   display: flex;
   justify-content: space-between;
@@ -35,6 +38,8 @@
   width: 100%;
   display: block;
   margin-bottom: 0.5rem;
+  max-width: 100%;
+  width: auto;
 }
 .corpo__lista__conteudo__item__titulo {
   font-family: "Raleway", sans-serif;

@@ -18,16 +18,18 @@
     <link rel="stylesheet" href="css/corpo/corpo-adicionar-produto.css" />
     <link rel="stylesheet" href="css/corpo/corpo-contato.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <script src="js/adicionar-produto.js"></script>
     <title>Alura Geek</title>
   </head>
   <body>
     <header class="header">
       <div class="header__topo header__topo--ajustes">
-        <img
-          src="assets/header/Logo.png"
-          alt="logomarca do site"
-          class="header__topo__logo"
-        />
+        <a href="index.html">
+          <img
+            src="assets/header/Logo.png"
+            alt="logomarca do site"
+            class="header__topo__logo"
+        /></a>
         <div class="header__topo__busca header__topo__busca--ajustes">
           <form class="header__topo__busca__form">
             <input
@@ -97,13 +99,14 @@
                 min="0.00"
                 max="100000.00"
                 step="0.01"
+                id="preco-produto"
                 required
                 class="corpo__adicionar-produto__container__form__label__input"
             /></label>
             <label
               for="descricao-produto"
               class="corpo__adicionar-produto__container__form__label"
-              >Nome do produto<textarea
+              >Descrição<textarea
                 name="descricao-produto"
                 id="descricao-produto"
                 class="corpo__adicionar-produto__container__form__label__textarea"
