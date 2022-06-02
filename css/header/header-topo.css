@@ -10,6 +10,11 @@
   width: var(--largura-desktop);
   box-sizing: border-box;
 }
+
+.header__topo__link {
+  margin: auto;
+}
+
 .header__topo__logo {
   grid-area: logo;
   width: 176px;

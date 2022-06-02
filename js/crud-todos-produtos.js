@@ -39,8 +39,6 @@ const search = (e) => {
         }
     });
 
-    console.log('break')
-
     if (currentSearchBarText.length == 0) {
         allItemTitles.map(title => {
             if (title.parentElement.classList.contains('corpo__produto__container__info__titulo--hidden'))
@@ -163,7 +161,7 @@ const createCard = (urlEnd, tituloProd, precoProd, descricaoProd) => {
 
     // adiciona os event listeners
     trashIcon.addEventListener('click', e => removeLocalElement(e));
-    editIcon.addEventListener('click', e => alert('não é editável'));
+    editIcon.addEventListener('click', e => editProductInfo(e));
 
     // cria os elemento com detalhes do item
     const titulo = document.createElement('p');
@@ -187,4 +185,20 @@ const createCard = (urlEnd, tituloProd, precoProd, descricaoProd) => {
 
     return cardDiv;
 
+}
+
+const editProductInfo = (e) => {
+    // pega as info do item
+    let item = e.target.parentElement.parentElement;
+    let itemInfo = [...item.querySelectorAll('p')];
+    let editTarget = {
+        nome: itemInfo[0].innerText,
+        preco: itemInfo[1].innerText.slice(3),
+        descricao: itemInfo[2].innerText
+    }
+
+    // salvar no sessionStorage
+    sessionStorage.setItem('produto-edit', JSON.stringify(editTarget));
+
+    window.location.replace('http://127.0.0.1:5500/editar-produto.html');
 }

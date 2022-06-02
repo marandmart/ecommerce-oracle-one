@@ -52,57 +52,17 @@
   width: 100%;
 }
 
-/* .corpo__adicionar-produto__container__upload-imagem {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.corpo__adicionar-produto__container__upload-imagem__upload-area {
-  border: 1px dashed #c8c8c8;
-  padding: 2rem;
-  background-color: #fff;
-  display: inline-block;
-  display: flex;
-  gap: 0.5rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.corpo__adicionar-produto__container__upload-imagem__upload-area object {
-  max-width: 32px;
-  margin-bottom: 1rem;
-}
-.corpo__adicionar-produto__container__upload-imagem__upload-area p {
-  color: #6b6b6b;
-  text-align: center;
-}
-.corpo__adicionar-produto__container__upload-imagem__span {
-  display: inline-block;
-  margin: 0 0.5rem;
-}
-.corpo__adicionar-produto__container__upload-imagem__upload-button {
-  display: inline-block;
-  width: 240px;
-  padding: 1rem;
-  text-align: center;
-  color: var(--login-btn);
-  border: 1px solid var(--login-btn);
-}
-.corpo__adicionar-produto__container__upload-imagem__upload-button::after {
-  content: "Procure no seu computador";
-}
-.corpo__adicionar-produto__container__upload-imagem__upload-button input {
-  display: none;
-}
-
 @media screen and (max-width: 850px) {
-  .corpo__adicionar-produto__container__upload-imagem__upload-button::after {
-    content: "Procure no seu tablet";
+  .corpo__adicionar-produto__container {
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .corpo__adicionar-produto__container__upload-imagem__upload-button::after {
-    content: "Procure no seu celular";
+  .corpo__adicionar-produto__container {
+    width: 85%;
   }
-} */
+  .corpo__adicionar-produto__container__titulo {
+    font-size: 24px;
+  }
+}

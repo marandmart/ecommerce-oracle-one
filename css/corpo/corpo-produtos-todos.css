@@ -19,9 +19,9 @@
   border: none;
   cursor: pointer;
 }
-.corpo__lista__conteudo__item__botoes img {
+/* .corpo__lista__conteudo__item__botoes img {
   border: 1px solid gray;
-}
+} */
 .corpo__lista__conteudo__item__botoes:nth-child(2) {
   right: 35px;
 }
