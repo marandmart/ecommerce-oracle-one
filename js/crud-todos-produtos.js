@@ -28,13 +28,13 @@ const search = (e) => {
     let currentSearchBarText = searchBarText.join('');
     allItemTitles.map(title => {
         if (!title.innerText.toLowerCase().includes(currentSearchBarText)) {
-            console.log(title.innerText.toLowerCase().includes(currentSearchBarText), title);
-            if (!title.parentElement.classList.contains('hidden')) {
-                title.parentElement.classList.add('hidden');
+            console.log(title.innerText.toLowerCase(), currentSearchBarText);
+            if (!title.parentElement.classList.contains('corpo__produto__container__info__titulo--hidden')) {
+                title.parentElement.className = 'corpo__produto__container__info__titulo--hidden';
             }
         } else {
-            if (title.parentElement.classList.contains('hidden')) {
-                title.parentElement.classList.remove('hidden');
+            if (title.parentElement.classList.contains('corpo__produto__container__info__titulo--hidden')) {
+                title.parentElement.className = 'corpo__lista__conteudo__item corpo__lista__conteudo__item--todos';
             }
         }
     });
@@ -43,8 +43,8 @@ const search = (e) => {
 
     if (currentSearchBarText.length == 0) {
         allItemTitles.map(title => {
-            if (title.parentElement.classList.contains('hidden'))
-                title.parentElement.classList.remove('hidden');
+            if (title.parentElement.classList.contains('corpo__produto__container__info__titulo--hidden'))
+                title.parentElement.className = 'corpo__lista__conteudo__item corpo__lista__conteudo__item--todos';
         })
     }
 
